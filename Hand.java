@@ -53,8 +53,9 @@ public class Hand {
     return handTotal;
   }
   
-  public void hit(Deck deck){
+  public void hit(Deck deck, Boolean show){
     this.pickupCard(deck.drawCard());
+    this.printHand(show);
   }
   
   public void stay(){
